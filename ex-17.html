@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Input Types: Validation | Required Data</title>
+        <!-- & Link to CSS File -->
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <!-- & Input Validation
+    ~ making sure that the right data is going into the forms
+    ~ for instance, if a form asks for an email how will it know that that data was entered
+        ~ is checks this since a typical email syntax must have the @ symbol
+    ~ forms mask text input when the input element has a "password" type
+    ~ it can also be given a minlength and a maxlength attribute to help with validation
+    -->
+        <h2>Input Validation</h2>
+        <form action="">
+            <label for="">Password</label>
+            <input
+                type="password"
+                name=""
+                id=""
+                placeholder="Please enter password"
+                minlength="3"
+                maxlength="10"
+            />
+            <input type="submit" value="Submit the Form!" />
+        </form>
+        <br /><br />
+
+        <h2>Required Data</h2>
+        <form action="" method="dialog">
+            <!-- & Required Data
+            ~ required attribute -> can be applied to one or more form inputs to enforce this.
+                ~ this means that the data has to be entered or the form cannot be submitted
+        -->
+            <label for="">Name: </label>
+            <input type="text" name="" id="" required />
+            <br /><br />
+
+            <label for="">Favorite Color: </label>
+            <input type="text" name="" id="" required />
+            <br /><br />
+
+            <input type="submit" value="Submit the Form!" />
+        </form>
+    </body>
+</html>
